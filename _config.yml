@@ -16,7 +16,7 @@ timezone:
 
 title: Tshering Phuntsho # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: One line of code at a time # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
