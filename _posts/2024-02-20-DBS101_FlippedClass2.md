@@ -38,3 +38,11 @@ An attribute that can be derived from other attribute of the entity is known as 
 # Relationship
 It depicts the relationship between two entities and it is represented with a diamond shape. Relationships are usually verbs such as assign, associate, or track and provide useful information that could not be discerned with just the entity types. Relationship can be one-to-one, one-to-many, many-to-one and many-to-many.
 ![relationship](pictures/ss8.png)
+
+During the flipped class, we are instructed to draw an ERD for our proposed system. I really enjoyed working in a team with my group mates Tshering Wangpo Dorji, Tshewang Dorji and Yonten Kinley Tenzin. We were group number 6 and our proposed system is voter registration. 
+![group](pictures/group.jpg)
+
+We shared our opinions and our knowledge on how to draw an ERD, then came to a one final solution. That final solution was written in the chart paper. This is the ERD for the voter registration that we drew.
+![ERD](pictures/ERD.jpg)
+
+Than we explained our ERD to the class and we had a question and answer session to clear their doubts. Our tutor made the necessary correction in our diagram.
