@@ -49,3 +49,5 @@ We shared our opinions and our knowledge on how to draw an ERD, then came to a o
 ![ERD](pictures/ERD.jpg)
 
 Than we explained our ERD to the class and we had a question and answer session to clear their doubts. Our tutor made the necessary correction in our diagram.
+
+##thank you
