@@ -26,6 +26,8 @@ Union operation is used to combine the result of two or more sql queries into a 
 ![union](pictures/ss11.png)
 
 The resultset table will look like this:
+
+
 ![unires](pictures/ss15.png)
 
 #### Union All
