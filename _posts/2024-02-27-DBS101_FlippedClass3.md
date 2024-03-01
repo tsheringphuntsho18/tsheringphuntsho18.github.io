@@ -36,6 +36,8 @@ Union All operation is equal to the Union operation. It returns the set without 
 ![unionall](pictures/ss13.png)
 
 The resultset table will look like this:
+
+
 ![unialres](pictures/ss17.png)
 
 #### Intersect
@@ -44,6 +46,8 @@ The intersect operation returns the common rows from both the SELECT statements.
 ![intersect](pictures/ss12.png)
 
 The resultset table will look like this:
+
+
 ![intersectres](pictures/ss16.png)
 
 #### Minus
@@ -52,6 +56,8 @@ Minus operator is used to display the rows which are present in the first query 
 ![minus](pictures/ss14.png)
 
 The resultset table will look like this:
+
+
 ![minusres](pictures/ss18.png)
 
 
