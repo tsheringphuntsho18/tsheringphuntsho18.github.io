@@ -61,6 +61,7 @@ The resultset table will look like this:
 ![minusres](pictures/ss18.png)
 
 
+It was a hot discussion between my group mates. The class was divideed into groups home group and given a topic, our group got set operators. We browsed through the internet and made ourselve 100% confident with what we are going to talk about when we are again divided into expert groups. My friends were explaining null values with real world examples and they answered all my questions and cleared the doubts that I had. Then my turn came to explain about the set operators. I also did my part very well that my friend has a good knowledge about set operators. By the way, it was just a piece of cake to me. In our flipped classroom, students taking charge of their learning makes it feel more personal and interactive. It is making students responsible for their education.
 
 
 
