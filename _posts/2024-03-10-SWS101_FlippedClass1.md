@@ -166,7 +166,7 @@ point-to-Point Tunneling Protocol (PPTP) is also a network protocol that allows 
 
 
 
-## Topic what i learned from over the wire bandit wargame
+## Topic: what i learned from over the wire bandit wargame
 I have completed bandit wargame  till level 20 -> level 21. It was a challenging game as I was just a beginner to terminal. In each level I learned a new terminal command.
 
 ### Level 0
