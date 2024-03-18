@@ -26,6 +26,7 @@ Row_number() does not handle the tie, it gives a unique sequential number for ea
 
 
 Demo of the above mention ranking function.
+
 RANK()
 
 ![aaf](pictures/rdemo.png)
@@ -37,3 +38,73 @@ DENSE_RANK()
 ROW_NUMBER()
 
 ![aaf](pictures/rndemo.png)
+
+### Widowing
+Window function performs a calculation such as aggregation, ranking and moving average across a set of table rows related to the current row. Let’s imagine that we are looking out to a busy street from the window. We see different things, right? SQL window functions also work like that, they go through the data row by row and the cool thing is they remember what they have seen before and what’s coming up next.
+
+There are two parts in a windowed aggregation:
+
+OVER
+The OVER clause  defines a window. This clause specifies how the rows that the function will operate on are determined. It can involve two parts:
+Partition By
+Order By
+
+Rows Between or Range between
+The difference between rows between and range between is that rows between specifies the distance in number of rows and range between specifies the distance in the values. 
+
+DEMO
+
+![demo](pictures/window.png)
+
+
+### Pivoting
+Pivot enables us to see rows as columns in a query result which makes data more readable and more presentable. The Unpivot operator does the opposite, that is it transforms the column based data into rows. E.g:
+
+Suppose we have a table like this:
+ 
+ ![demo](pictures/apivot.png)
+
+And you want to pivot it so that each month's profit value is represented in a separate column, like this:
+
+![demo](pictures/bpivot.png)
+
+DEMO
+Postgresql is not supporting pivot so can’t show a demo for pivot and unpivot. 
+
+### Rollup and Cube
+Rollup and cube make it possible for values to break it down in more detail, instead of just giving you one big summary (like a total). Rollup summarizes against a hierarchy of columns used in the group by clause. Cube groups by all combinations of the values.
+
+Imagine we have a basket of apples. Normally, someone might just tell us "there are 50 apples." But with this approach, they'd tell you things like:
+
+- 20 are red, 30 are green. 
+- 10 are small, 30 are medium, 10 are large. 
+- 40 are ripe, 10 are not quite ripe. 
+
+This gives you a much richer understanding of the apples in the basket.
+
+E.g:
+Rollup
+
+![demo](pictures/rol1.png)
+
+Cube
+
+![demo](pictures/cube1.png)
+
+
+DEMO
+Rollup
+
+![demo](pictures/rollup.png)
+
+
+Cube
+
+![demo](pictures/cube.png)
+
+
+As mentioned earlier, my group got advanced aggregation function ranking. It was a bit easy because the meaning is the same as that of the English language, but it was also a bit difficult because it has types and it follows certain rules when coding in sql. So being a software engineering student though we have little knowledge of function and all, we have great skill at googling. 
+
+We referred to the link provided by the miss and many more links for better understanding. Then having got the ideas on how ranking works in sql, we prepared a demo on student’s results to present to the class later.
+
+My friends from other groups have also done the presentation very well and cleared every doubt, leading to a better understanding on advance aggregation functions.
