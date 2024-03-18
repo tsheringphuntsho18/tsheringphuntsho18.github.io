@@ -83,6 +83,7 @@ Imagine we have a basket of apples. Normally, someone might just tell us "there 
 This gives you a much richer understanding of the apples in the basket.
 
 E.g:
+
 Rollup
 
 ![demo](pictures/rol1.png)
@@ -93,6 +94,7 @@ Cube
 
 
 DEMO
+
 Rollup
 
 ![demo](pictures/rollup.png)
