@@ -12,7 +12,7 @@ Hack The Box is the hacking playground and cybersecurity community in the world 
 ### TIER 0 (The key is a strong foundation)
 From tier 0, I have gained essential skills in pen-testing. I learned how to connect to various services, such as ftp, smb and telnet  anonymously. I also learned how to use nmap to identify open ports. In this tier there are many virtual machines but some are locked and can only be answered by purchasing premium. So the virtual machines that I will be going through in this tier are Meow, Fawn, Dancing and Redeemer.
 
-#### 1.Meow
+#### 1. Meow
 Task 1 
 
 ![htb](pictures/htb1.png)
@@ -26,6 +26,7 @@ Task 3
 ![htb](pictures/htb3.png)
 
 As mentioned above, we need to form a VPN connection into HTB labs. To do so we need to use the openvpn service followed by /path/to VPN that we downloaded from hack the box.
+
 Command :
  sudo openvpn /home/tshering/Downloads/starting_point_emptyboxInside.ovpn
 
@@ -69,7 +70,7 @@ There is a flag.txt file, so to display the content inside that file the command
 Flag is b40abdfe23665f766f9c61ecba8a4c19
 
 
-#### 2.Fawn
+#### 2. Fawn
 Task 1
 
 ![htb](pictures/htbf1.png)
@@ -131,3 +132,65 @@ Task 12 : Submit root flag
 I listed the files and folders inside ftp and found that there is a flag.txt file but I can't display that file with the ‘cat’ command, so as mentioned in the previous task, I can download it with the ‘get’ command. 
 
 Flag is 035db21c881520061c53e0536e44f815
+
+
+
+#### 3. Dancing
+
+Task 1
+
+![htb](pictures/htbd1.png)
+
+Task 2: What port does SMB use to operate at?
+
+![htb](pictures/htbd2n3.png)
+
+Ans: 445
+
+Task 3: What is the service name for port 445 that came up in our Nmap  scan?
+
+![htb](pictures/htbd2n3.png)
+
+Ans: microsoft-ds?
+
+Task 4: What is the 'flag' or 'switch' that we can use with the smbclient utility to 'list' the available shares on Dancing?
+
+![htb](pictures/htbd4.png)
+
+Ans: -L
+
+Task 5: How many shares are there on Dancing?
+
+![htb](pictures/htbd5.png)
+
+Ans: 4
+
+Task 6
+
+![htb](pictures/htbd6.png)
+
+WorkShares is the only share without  value under the comment column. 
+
+Task 7
+
+![htb](pictures/htbd7.png)
+
+With the help command we can get all the applicable commands. I saw the ‘get’ command which is to download the files.
+
+Task 8: Submit root flag
+
+We can login to workshares as it doesn't require a password, so i login to workshare.
+ 
+ ![htb](pictures/htbd8a.png)
+
+After connecting to the workshares i found 2 folders so I checked them one by one. Inside the Amy.J folder there is a worknotes.txt which contains the text shown below:
+
+![htb](pictures/htbdb.png)
+
+Then I opened the James.P folder, inside the James.p folder there is a flag.txt file so I downloaded it and got the flag.
+
+![htb](pictures/htbd8c.png)
+
+Flag is 5f61c10dffbc77a704d76016a22f1664
+
+![htb](pictures/htbdflag.png)
