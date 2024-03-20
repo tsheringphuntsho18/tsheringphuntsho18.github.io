@@ -12,7 +12,7 @@ Hack The Box is the hacking playground and cybersecurity community in the world 
 ### TIER 0 (The key is a strong foundation)
 From tier 0, I have gained essential skills in pen-testing. I learned how to connect to various services, such as ftp, smb and telnet  anonymously. I also learned how to use nmap to identify open ports. In this tier there are many virtual machines but some are locked and can only be answered by purchasing premium. So the virtual machines that I will be going through in this tier are Meow, Fawn, Dancing and Redeemer.
 
-#### Meow
+#### 1.Meow
 Task 1 
 
 ![htb](pictures/htb1.png)
@@ -28,9 +28,6 @@ Task 3
 As mentioned above, we need to form a VPN connection into HTB labs. To do so we need to use the openvpn service followed by /path/to VPN that we downloaded from hack the box.
 Command :
  sudo openvpn /home/tshering/Downloads/starting_point_emptyboxInside.ovpn
-
-
-
 
 Task 4: What tool do we use to test our connection to the target with an ICMP echo request?
 
@@ -71,3 +68,66 @@ There is a flag.txt file, so to display the content inside that file the command
 
 Flag is b40abdfe23665f766f9c61ecba8a4c19
 
+
+#### 2.Fawn
+Task 1
+
+![htb](pictures/htbf1.png)
+
+Task 2: Which port does the FTP service listen on usually?
+
+![htb](pictures/htbf2n5.png)
+
+Ans: 21
+
+Task 3
+
+![htb](pictures/htb3.png)
+
+Task 4
+
+![htb](pictures/htbf4.png)
+
+Task 5: From your scans, what version is FTP running on the target?
+
+![htb](pictures/htbf2n5.png)
+
+Ans: vsftpd 3.0.3
+
+Task 6: From your scans, what OS type is running on the target?
+
+![htb](pictures/htbf6.png)
+
+Ans: Unix
+
+Task 7
+
+![htb](pictures/htbf8.png)
+
+Task 8
+
+![htb](pictures/htbf8.png)
+
+Task 9: What is the response code we get for the FTP message 'Login successful'?
+
+![htb](pictures/htbf9.png)
+
+We have to login using the ftp command. As we covered in task 8, the username to log into ftp is anonymous and password is the default one i.e ‘password’.
+
+Ans: 230
+
+Task 10
+
+![htb](pictures/htbf10.png)
+
+Task 11
+
+![htb](pictures/htbf11.png)
+
+Task 12 : Submit root flag
+
+![htb](pictures/htbfflag.png)
+
+I listed the files and folders inside ftp and found that there is a flag.txt file but I can't display that file with the ‘cat’ command, so as mentioned in the previous task, I can download it with the ‘get’ command. 
+
+Flag is 035db21c881520061c53e0536e44f815
