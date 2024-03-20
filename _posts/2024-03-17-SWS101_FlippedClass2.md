@@ -194,3 +194,75 @@ Then I opened the James.P folder, inside the James.p folder there is a flag.txt 
 Flag is 5f61c10dffbc77a704d76016a22f1664
 
 ![htb](pictures/htbdflag.png)
+
+#### 4. Redeemer
+Task 1: Which TCP port is open on the machine?
+
+Command is nmap -p- -sV target_ip_address but it is taking time so to solve this issue i can ran this command : nmap -p- –min-rate 5000 -sV ip_address
+
+ ![htb](pictures/htbr1n2.png)
+
+Ans: 6379
+
+Task 2: Which service is running on the port that is open on the machine?
+
+ ![htb](pictures/htbr1n2.png)
+
+Ans: redis
+
+(Redis(REmote DIctionary Server) is an open-source, in-memory data store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker.)
+
+Task 3
+
+ ![htb](pictures/htbr3.png)
+
+Task 4: Which command-line utility is used to interact with the Redis server? Enter the program name you would enter into the terminal without any arguments.
+
+ ![htb](pictures/htbr4.png)
+
+Ans: redis-cli
+(As a software engineering student i should be good at googling too 🙂)
+
+Task 5: Which flag is used with the Redis command-line utility to specify the hostname?
+
+ ![htb](pictures/htbr5.png)
+
+Ans: -h
+
+Task 6
+
+ ![htb](pictures/htbr6.png)
+
+Task 7: What is the version of the Redis server being used on the target machine?
+
+ ![htb](pictures/htbr7.png)
+
+I used info command to get all information about redis server
+Ans: 5.0.7
+
+Task 8
+
+ ![htb](pictures/htbr8.png)
+
+Task 9: How many keys are present inside the database with index 0?
+
+ ![htb](pictures/htbr9.png)
+
+Scrolling down I found the keyspace section where the number of keys present are given.
+
+Ans: 4
+
+Task 10:  Which command is used to obtain all the keys in a database?
+
+ ![htb](pictures/htbr11.png)
+
+After selecting the database, we can list all the keys present in the database using the command keys *
+Ans: keys *
+
+Task 11: Submit root flag
+
+ ![htb](pictures/htbrflag.png)
+
+Flag is 03e1d2b376c37ab3f5319922053953eb
+
+
