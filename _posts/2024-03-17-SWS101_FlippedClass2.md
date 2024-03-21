@@ -266,3 +266,72 @@ Task 11: Submit root flag
 Flag is 03e1d2b376c37ab3f5319922053953eb
 
 
+### TIER 1 (You need to walk before you can run)
+Tier 1 is going deeper into the world of cybersecurity pen-testing, focusing on web exploitation techniques. I learn basic web exploitation techniques such as SQL injection and  server side template Injection. Building on the knowledge from tier 0, I have applied these techniques to exploit various services showcased earlier, ensuring a hands-on understanding of their vulnerabilities.So the virtual machines that I will be going through in this tier are Appointment, Sequel, Crocodile and Responder.
+
+#### 1. Appointment
+Task 1
+
+ ![htb](pictures/htbap1.png)
+
+SQL is a standard language for accessing and manipulating databases
+
+Task 2
+
+ ![htb](pictures/htbap2.png)
+
+SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. This can allow an attacker to view data that they are not normally able to retrieve.
+
+Task 3
+
+ ![htb](pictures/htbap3.png)
+
+Task 4: What does Nmap report as the service and version that are running on port 80 of the target?
+
+ ![htb](pictures/htbap4.png)
+
+Ans: Apache httpd 2.4.38 ((Debian))
+
+Task 5: What is the standard port used for the HTTPS protocol?
+
+ ![htb](pictures/htbap5.png)
+
+Ans: 443
+
+Task 6
+
+ ![htb](pictures/htbap6.png)
+
+Folders are also called "directories,"
+
+Task 7
+
+ ![htb](pictures/htbap7.png)
+
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+
+Task 8
+
+ ![htb](pictures/htbap8.png)
+
+Task 9
+
+ ![htb](pictures/htbap9.png)
+
+Task 10: If user input is not handled carefully, it could be interpreted as a comment. Use a comment to login as admin without knowing the password. What is the first word on the web page returned?
+
+I pasted the machine ip address on the website and got this.
+
+![htb](pictures/htbap10a.png)
+
+Now to login i need username name and password which i don't know but i can use sql injection to login. In this case, I can log in as any user without the need for a password by using the SQL comment(#). 
+
+![htb](pictures/htbap10b.png)
+
+After # anything I type in the password section will be ignored. Then I will successfully login.
+
+![htb](pictures/htbap10c.png)
+
+Ans for task 10: Congratulations
+
+Flag is e3d0796d002a446c0e622226f42e9672
