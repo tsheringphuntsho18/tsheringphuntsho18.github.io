@@ -389,3 +389,73 @@ Next I went through each table, and got a flag in the config table.
  ![htb](pictures/htbs7e.png)
 
 Flag is 7b4bec00d1a39e3dd4e021ec3d915da8
+
+#### 3. Crocodile
+Task 1
+
+ ![htb](pictures/htbc1.png)
+
+Task 2: What service version is found to be running on port 21?
+
+ ![htb](pictures/htbc2n7.png)
+
+Ans: vsftpd 3.0.3
+
+Task 3: What FTP code is returned to us for the "Anonymous FTP login allowed" message?
+
+ ![htb](pictures/htbc3.png)
+
+Ans: 230
+
+Task 4
+With the username anonymous we can login anonymously. That’s what I did in task 3.
+
+ ![htb](pictures/htbc4.png)
+
+Task 5
+
+ ![htb](pictures/htbc5.png)
+
+With the help function we can find the available command, in ftp there is ‘get’ command to download the file.
+
+Task 6: What is one of the higher-privilege sounding usernames in 'allowed.userlist' that we download from the FTP server?
+
+First I listed the files and folders inside ftp and found that allowed.userlist is there and I downloaded it .
+
+ ![htb](pictures/htbc6a.png)
+
+When I opened the allowed.userlist file I found that admin has a higher-privilege.
+
+ ![htb](pictures/htbc6b.png)
+
+Ans: admin
+
+Task 7: What version of Apache HTTP Server is running on the target host?
+
+ ![htb](pictures/htbc2n7.png)
+
+Ans: Apache httpd 2.4.41
+
+Task 8
+
+ ![htb](pictures/htbc8.png)
+
+Task 9
+
+ ![htb](pictures/htbc9.png)
+
+To CTF, we should paste the machine ip address in the website followed by login.phh to land on the login page. (ip_address/login.php) 
+
+ ![htb](pictures/htbc10a.png)
+
+From the allowed.userlist we earlier found that username admin is high privilege, so we will use username admin. And the password is in allowed.userlist.passwd file.
+
+ ![htb](pictures/htbc10b.png)
+
+Password for user admin is rKXM59ESxesUFHAd.
+
+ ![htb](pictures/htbcflag.png)
+
+We got our flag.
+Flag is c7110277ac44d78b6a9fff2232434d16
+
