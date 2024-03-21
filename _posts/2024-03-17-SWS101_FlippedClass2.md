@@ -335,3 +335,57 @@ After # anything I type in the password section will be ignored. Then I will suc
 Ans for task 10: Congratulations
 
 Flag is e3d0796d002a446c0e622226f42e9672
+
+#### 2. Sequel
+Task 1: During our scan, which port do we find serving MySQL?
+
+ ![htb](pictures/htbs1.png)
+
+Ans: 3306
+
+Task 2: What community-developed MySQL version is the target running?
+
+ ![htb](pictures/htbs2.png)
+
+Ans: MariaDB
+
+Task 3
+
+ ![htb](pictures/htbs3.png)
+
+Task 4
+
+ ![htb](pictures/htbs4.png)
+
+Task 5
+
+ ![htb](pictures/htbs5.png)
+
+Task 6
+
+ ![htb](pictures/htbs6.png)
+
+Task 7: There are three databases in this MySQL instance that are common across all MySQL instances. What is the name of the fourth that's unique to this host?
+First I logged in to mysql.
+
+ ![htb](pictures/htbs7a.png)
+
+Then I visualized the database and found four databases, among them the htb database is unique to this host.
+
+![htb](pictures/htbs7b.png)
+
+Ans: htb
+
+To CTF, I have to use the htb database.
+
+ ![htb](pictures/htbs7c.png)
+
+After that I want to see what tables are there inside the htb database. There are two tables, config and user.
+
+ ![htb](pictures/htbs7d.png)
+
+Next I went through each table, and got a flag in the config table.
+
+ ![htb](pictures/htbs7e.png)
+
+Flag is 7b4bec00d1a39e3dd4e021ec3d915da8
