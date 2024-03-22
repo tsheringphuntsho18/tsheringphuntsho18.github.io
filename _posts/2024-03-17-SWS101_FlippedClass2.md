@@ -459,3 +459,54 @@ Password for user admin is rKXM59ESxesUFHAd.
 We got our flag.
 Flag is c7110277ac44d78b6a9fff2232434d16
 
+#### 4. Responder 
+Task 1: When visiting the web service using the IP address, what is the domain that we are being redirected to?
+
+![htb](pictures/htbre1.png)
+
+Ans: unika.htb
+
+Task 2: Which scripting language is being used on the server to generate web pages?
+
+ ![htb](pictures/htbre2.png)
+
+Ans: php
+
+Task 3
+
+ ![htb](pictures/htbre3.png)
+
+Task 4
+
+ ![htb](pictures/htbre4.png)
+
+Task 5
+
+ ![htb](pictures/htbre5.png)
+
+Task 6
+
+ ![htb](pictures/htbre6.png)
+
+Task 7
+
+ ![htb](pictures/htbre7.png)
+
+Task 8
+
+ ![htb](pictures/htbre8.png)
+
+Task 9: What is the password for the administrator user?
+
+ ![htb](pictures/htbre9.png)
+
+Ans: badminton
+
+Task 10: We'll use a Windows service (i.e. running on the box) to remotely access the Responder machine using the password we recovered. What port TCP does it listen on?
+
+ ![htb](pictures/htbre10.png)
+
+Ans: 5985
+
+### Conclusion
+Going through each machine, I have learned something new about pen testing and got real world hacking experiences. I make good use of google when i am stuck, and i say googling is also a part of software engineering skills. So lastly I quote”My crime is that of curiosity”.
