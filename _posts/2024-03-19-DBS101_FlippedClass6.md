@@ -4,4 +4,4 @@ categories: [DBS101, Flipped_class6]
 tags: [DBS101]
 ---
 
-## Topic: nosql
+## Topic: NOSQL
