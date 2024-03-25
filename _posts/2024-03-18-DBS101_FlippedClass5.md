@@ -10,11 +10,11 @@ tags: [DBS101]
 Normal form is a sets of guidelines that is used to design relational databases which are free of data anomalies. Anomalies are irregularities or inconsistencies that occur in a database. In today's flipped class we are grouped in 4 and given 1 type of DBMS normal form to each group, my group got fourth normal form.
 
 ### Types of DBMS Normal Form
-First Normal Form
-Second Normal Form
-Third Normal Form
-Boyce-Codd Normal Form
-Fourth Normal Form
+- First Normal Form
+- Second Normal Form
+- Third Normal Form
+- Boyce-Codd Normal Form
+- Fourth Normal Form
 
 ### 1. First Normal Form 
 This is the most basic level of normalization. In 1NF, each column in th table should be single valued, should have a unique name and the valued stored must be of the same type. The first normal form helps to eliminate duplicate data and simplify queries.
