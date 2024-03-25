@@ -20,7 +20,7 @@ This is the most basic level of normalization. In 1NF, each column in th table s
 
 Lets create a table to store student data.
 
-![htb](pictures/1NF.png)
+![nf](pictures/1NF.png)
 
 The above table is in first normal form as it fulfills all the criteria of first normal form.
 
@@ -29,11 +29,11 @@ The 1NF only eliminates repeating groups, not redundancy. That's why there is 2N
 
 Student table
 
-![htb](pictures/2NFstd.png)
+![nf](pictures/2NFstd.png)
 
 Department table 
 
-![htb](pictures/2NFdep.png)
+![nf](pictures/2NFdep.png)
 
 If there are 100 students in SWE, we don't need to store its department name as SWE for all the 100 records, instead we can store it in the second table as the department_id for SWE is 101.
 
@@ -42,15 +42,15 @@ A relation is said to be in third normal form, if it satisfies the first normal 
 Example;
 Student table
 
-![htb](pictures/3NFs.png)
+![nf](pictures/3NFs.png)
 
 Department table
 
-![htb](pictures/3NFd.png)
+![nf](pictures/3NFd.png)
 
 Student_department table
 
-![htb](pictures/3NFsd.png)
+![nf](pictures/3NFsd.png)
 
 The student table contains information about students, with student_ID as the primary key. The Department Table contains information about the department with Deparment_ID as the primary key.
 
@@ -64,11 +64,11 @@ For a table to satisfy the fourth normal form,  it should be in the Boyce-Codd n
 
 Pair of toys
 
-![htb](pictures/4NF1.png)
+![nf](pictures/4NF1.png)
 
 To bring it into 4NF
 
-![htb](pictures/4NF2.png)
+![nf](pictures/4NF2.png)
 
 Now this relation satisfies the fourth normal form.
 
