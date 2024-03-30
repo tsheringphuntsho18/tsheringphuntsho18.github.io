@@ -63,7 +63,7 @@ __Ans__: /assets
 
 **Navigate to the directory you found in question one. What file stands out as being likely to contain sensitive data?**
 
-![owasp](pictures/webapp.db.png)
+![owasp](pictures/webappdb.png)
 
 __Ans__: webapp.db
 
