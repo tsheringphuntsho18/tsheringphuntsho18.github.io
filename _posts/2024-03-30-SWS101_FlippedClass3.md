@@ -246,7 +246,7 @@ __Ans__: fe86079416a21a3c99937fea8874b667
 **What is the flag that you found in arthur's account?**
 To get the flag from arthur’s account it is the same as how I did in darren.
 
-![owasp](pictures/arthur.png)
+![owasp](pictures/arhtur.png)
 
 __Ans__: d9ac0f7db4fda460ac3edeb75d75e16e
 
@@ -285,7 +285,7 @@ __Ans__: guest
 **What is the name of the website's cookie containing a JWT token?**<br>
 Now I have successfully logged in, I might have JWT stored as a cookie in your browser. So I click on inspect to open developer tools. 
 
-![owasp](pictures/jwttoken.png)
+![owasp](pictures/Jwttoken.png)
 
 In the storage tab there are cookies and all the details are there.
 
@@ -354,7 +354,7 @@ __Ans__: localhost
 **Check the "Download Resume" button. Where does the server parameter point to?**
 When I hover on the Downloads Resume button the server parameter points to secure-file-storage.com .
 
-![owasp](pictures/serverpoint.png)
+![owasp](pictures/severpoint.png)
 
 __Ans__: secure-file-storage.com
 
