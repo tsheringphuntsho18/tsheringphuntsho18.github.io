@@ -55,7 +55,7 @@ The OSI (Open Systems Interconnection) Model and the TCP/IP (Transmission Contro
 ### OSI model(Open Systems Interconnection)
 The OSI Model is a conceptual model that standardizes the functions of a communication or computing system into seven abstraction layers.
 
-![osi](pictures/osiModel.png)
+![osi](/assets/SWS_pictures/osiModel.png)
 
 Seven Layers from bottom to top:
 1. Physical layer
@@ -100,7 +100,7 @@ Equivalent to the Transport layer in the OSI model.
 4. Application
 Facilitates communication between software applications and the network.
 
-![TCP](pictures/tcpModel.png)
+![TCP](/assets/SWS_pictures/tcpModel.png)
 
 ** Note that ** 
 The OSI (Open Systems Interconnection) model and the TCP/IP (Transmission Control Protocol/Internet Protocol) model, although developed independently, can be loosely mapped to each other.
@@ -111,7 +111,7 @@ Network layer corresponds to the internet layer in the TCP/IP model. Transport l
 
 Application layer from the TCP/IP model is equivalent to the combination of the Session, Presentation, and Application layers in the OSI model. The diagram below sum up my point;
 
-![Both](pictures/both.png)
+![Both](/assets/SWS_pictures/both.png)
 
 ### Packet transfer
 Packet transfer is the process by which data is broken down into smaller units called packets and transmitted across a network from a source to a destination.
@@ -122,7 +122,7 @@ In a layered system, devices in a layer exchange data in a different format call
 The network layer uses logical addressing (e.g. IP addresses) to uniquely identify devices on a network.
 
 #### IPv4 vs IPv6
-![IPv4](pictures/ipv4-vs-ipv6.png)
+![IPv4](/assets/SWS_pictures/ipv4-vs-ipv6.png)
 
 #### Subnetting 
 Subnetting is a networking technique that involves dividing an address range of IPv4 addresses into several smaller address ranges.
@@ -135,7 +135,7 @@ Each host in a network has its own 48-bit (6 octets) Media Access Control (MAC) 
 ### TCP 3-Way Handshake
 In the establishment of a TCP connection between a client and a server, a TCP three-way handshake process is performed.The three-way handshake is a fundamental process in establishing a reliable communication connection using the Transmission Control Protocol (TCP). It ensures that both the sender and receiver are ready for data exchange
 
-![3way](pictures/3way.png)
+![3way](/assets/SWS_pictures/3way.png)
 
 To understand the three way handshake better, let's imagine Karma and Tshering want to exchange secret messages, and Karma wants to make sure the messages are delivered reliably. 
 
@@ -179,7 +179,7 @@ Command to login is ssh bandit0@bandit.labs.overthewire.org -p 2220
 ### Level 0 -> level 1
 In this level we have to find the password for the next level which is stored in the readme file. With the ‘ls’ command we can list the file in that directory. I ran ‘ls’ and saw there was a readme file so I ran command cat readme and got the password for next level(level1 -> level2). ‘cat’ command displays the content of the file. 
 
-![bandit](pictures/bandit0.png)
+![bandit](/assets/SWS_pictures/bandit0.png)
 
 Password for level 1 is NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
@@ -187,21 +187,21 @@ Password for level 1 is NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 ### Level 1 -> Level 2
 From this level I learned to read the file that starts with dash(-). We have to use escape characters to open this kind of  file. command is ‘cat ./-’
 
-![bandit](pictures/bandit1.png)
+![bandit](/assets/SWS_pictures/bandit1.png)
 
 Password for level 2 is rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
 ### Level 2 -> Level 3
 From this level I learned to read the file that has spaces in the file name. We have to put the file name inside quotation marks to open this kind of  file. command is cat ‘file name’.
 
-![bandit](pictures/bandit2.png)
+![bandit](/assets/SWS_pictures/bandit2.png)
 
 Password for level 3 is aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 # Level 3 -> Level 4
 From this level I learned how to list the hidden file. With cd command I change my directory to inhere. Command to list hidden files is ‘ls -a’. I found a .hidden file and I ran ‘cat .hidden’ command to display the contents of the file.
 
-![bandit](pictures/bandit3.png)
+![bandit](/assets/SWS_pictures/bandit3.png)
 
 Password for level 4 is 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
@@ -210,7 +210,7 @@ We are provided with the hint that password for the next level is stored in the 
 for x in {0..9}; do file ./-file0$x; done
 From this output i can say that password is in -file07 so with the command  cat ./-file07 I got a password.
 
-![bandit](pictures/bandit4.png)
+![bandit](/assets/SWS_pictures/bandit4.png)
 
 password for level 5 is lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
@@ -219,7 +219,7 @@ From this level I learned how to use find commands. Hint says that password is s
 command is  ‘find . -type f -size 1033c ! -executable ‘.
 ‘ls’ command is not showing the dot file name which is hidden so to get .file2 we should use ls -a command.
 
-![bandit](pictures/bandit5.png)
+![bandit](/assets/SWS_pictures/bandit5.png)
 
 Password for level 6 is P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
@@ -229,7 +229,7 @@ To solve this level i need to find the server that is owned by user bandit7 and 
 Note that  we use . when we want to search in the current directory and /  when we want to search the entire filesystem.
 We got the server file path which we can display it’s content with command ‘cat /var/lib/dpkg/onfo/bandit7.password’
 
-![bandit](pictures/bandit6.png)
+![bandit](/assets/SWS_pictures/bandit6.png)
 
 Password for level 7 is z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
@@ -237,7 +237,7 @@ Password for level 7 is z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 The hint was that the password is next to the word millionth, so I used the command below to read the file and then grep the word millionth. 
 Command is ‘cat data.txt | grep millionth’
 
-![bandit](pictures/bandit7.png)
+![bandit](/assets/SWS_pictures/bandit7.png)
 
 Password for level 8 TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
@@ -246,14 +246,14 @@ Password for level 8 TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 Inside data.txt there is a lot of data. Hint says that password occurs only once that means it is unique so to get a password we have to sort for unique data.
 command is sort data.txt | uniq -u
 
-![bandit](pictures/bandit8.png)
+![bandit](/assets/SWS_pictures/bandit8.png)
 
 Password for level 9 is EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
 ### Level 9 -> Level 10
 According to the hint, the file contains both strings and binary data which can make it difficult to read. In order to sort out the plain text the  next part is to grep the lines that start with the = sign. So to do that command is ‘cat data.txt | strings | grep ^=’.
 
-![bandit](pictures/bandit9.png)
+![bandit](/assets/SWS_pictures/bandit9.png)
 
 Password for level 10 is G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
@@ -261,7 +261,7 @@ Password for level 10 is G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 data.txt contains base64 encoded data so here we need to use base64 to decode base64-encoded data.
  command is ‘cat data.txt | base64 —decode’
 
-![bandit](pictures/bandit10.png)
+![bandit](/assets/SWS_pictures/bandit10.png)
 
 password for level 11 is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
@@ -269,7 +269,7 @@ password for level 11 is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ### Level 11 -> Level 12
 command is cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]’
 
-![bandit](pictures/bandit11.png)
+![bandit](/assets/SWS_pictures/bandit11.png)
 
 Password for level 12 is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
@@ -296,7 +296,7 @@ we need to connect to the local host on port 30000 and submit the password for l
 command to connect is nc localhost 30000
 Nc means netcat
 
-![bandit](pictures/bandit14.png)
+![bandit](/assets/SWS_pictures/bandit14.png)
 
 Password for level 15 is jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
@@ -335,9 +335,9 @@ password for level 20 is VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 we have to open two terminal and login to bandit20
 In one terminal command we should run is nc -lvp 9999 and in another terminal command that we should run is ./suconnect 9999 then in the earlier terminal we should paste level 20 password and then we receive level 21 password.
 
-![bandit](pictures/bandit20.png)
+![bandit](/assets/SWS_pictures/bandit20.png)
 
-![bandit](pictures/bandit20suconnect.png)
+![bandit](/assets/SWS_pictures/bandit20suconnect.png)
 
 password for level 21 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 

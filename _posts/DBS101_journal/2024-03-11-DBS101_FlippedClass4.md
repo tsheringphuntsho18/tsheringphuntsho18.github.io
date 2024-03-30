@@ -14,30 +14,30 @@ Ranking also has many types like rank, dense rank , row number and so on.
 
 Rank() function gives a rank to each row by going through the specific data. Rank() function gives the same rank to the row having the same values and skips the next ranking. The number of rank skipped depends on how many rows had an identical ranking. E.g:
 
-![aaf](pictures/rank.png)
+![aaf](/assets/DBS_pictures/rank.png)
 
 Dense_rank() function also gives rank to each row in the dataset but unlike rank it handles ties differently. It assigns the same rank to those having the same values and doesn’t skip any rank. E.g:
 
-![aaf](pictures/drnk.png)
+![aaf](/assets/DBS_pictures/drnk.png)
 
 Row_number() does not handle the tie, it gives a unique sequential number for each row.It gives the rank one for the first row and then increments the value by one for each row. E.g:
 
-![aaf](pictures/Row.png)
+![aaf](/assets/DBS_pictures/Row.png)
 
 
 Demo of the above mention ranking function.
 
 RANK()
 
-![aaf](pictures/rdemo.png)
+![aaf](/assets/DBS_pictures/rdemo.png)
 
 DENSE_RANK()
 
-![aaf](pictures/drdemo.png)
+![aaf](/assets/DBS_pictures/drdemo.png)
 
 ROW_NUMBER()
 
-![aaf](pictures/rndemo.png)
+![aaf](/assets/DBS_pictures/rndemo.png)
 
 ### Widowing
 Window function performs a calculation such as aggregation, ranking and moving average across a set of table rows related to the current row. Let’s imagine that we are looking out to a busy street from the window. We see different things, right? SQL window functions also work like that, they go through the data row by row and the cool thing is they remember what they have seen before and what’s coming up next.
@@ -54,7 +54,7 @@ The difference between rows between and range between is that rows between speci
 
 DEMO
 
-![demo](pictures/window.png)
+![demo](/assets/DBS_pictures/window.png)
 
 
 ### Pivoting
@@ -62,11 +62,11 @@ Pivot enables us to see rows as columns in a query result which makes data more 
 
 Suppose we have a table like this:
  
- ![demo](pictures/apivot.png)
+ ![demo](/assets/DBS_pictures/apivot.png)
 
 And you want to pivot it so that each month's profit value is represented in a separate column, like this:
 
-![demo](pictures/bpivot.png)
+![demo](/assets/DBS_pictures/bpivot.png)
 
 DEMO
 Postgresql is not supporting pivot so can’t show a demo for pivot and unpivot. 
@@ -86,23 +86,23 @@ E.g:
 
 Rollup
 
-![demo](pictures/rol1.png)
+![demo](/assets/DBS_pictures/rol1.png)
 
 Cube
 
-![demo](pictures/cube1.png)
+![demo](/assets/DBS_pictures/cube1.png)
 
 
 DEMO
 
 Rollup
 
-![demo](pictures/rollup.png)
+![demo](/assets/DBS_pictures/rollup.png)
 
 
 Cube
 
-![demo](pictures/cube.png)
+![demo](/assets/DBS_pictures/cube.png)
 
 
 As mentioned earlier, my group got advanced aggregation function ranking. It was a bit easy because the meaning is the same as that of the English language, but it was also a bit difficult because it has types and it follows certain rules when coding in sql. So being a software engineering student though we have little knowledge of function and all, we have great skill at googling. 
