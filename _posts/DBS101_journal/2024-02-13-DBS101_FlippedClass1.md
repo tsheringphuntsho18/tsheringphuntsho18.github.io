@@ -4,7 +4,7 @@ categories: [DBS101, Flipped_class1]
 tags: [DBS101]
 ---
 
-### Topic : Database Users and Database Administrators
+## Topic : Database Users and Database Administrators
 
 In this flipped class I learned about who were database users and what is the roles and responsibilities of database administrators. Under the database users, I learned about 7 types of database users in DBMS. 
 1 Database administrator
