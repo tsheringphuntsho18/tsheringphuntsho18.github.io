@@ -33,7 +33,7 @@ Customer data management
 #### 2. Key value based databases
 Key value based database is a non relational database which simply stores data in key-value pairs. The data can be retrieved by using a unique key allotted to each element in the database. The values can be simple data types like strings and numbers or complex objects.
 
-![dbs](/assets/DBS_pictures/kv.png)
+![dbs](/pictures/DBS_pictures/kv.png)
 
 A key-value store is like a relational database with only two columns which is the key and the value.
 
@@ -50,7 +50,7 @@ key-value databases are used to store user profiles in e-commerce platforms and 
 #### 3. Graph databases
 Graph database uses graphs to store the data in the form of nodes in the database. The connections between the nodes are called links or relationships. graph databases store data as a network of entities and relationships. As a result, these databases often provide better performance and flexibility as they are more suited for modeling real-world scenarios.
 
-![dbs](/assets/DBS_pictures/graph.png)
+![dbs](/pictures/DBS_pictures/graph.png)
 
 
 The above graph shows an example of a social network graph. Given the people (nodes) and their relationships (edges), you can find out who the "friends of friends" of a particular person are—for example, the friends of Norbu Dendup's friends.
@@ -68,7 +68,7 @@ Graph databases are widely used to model and analyze social networks, enabling f
 ### 4. Vector Databases
 It is a database that stores and manages data in vector form. A vector is a list of numbers, like: {12, 13, 19, 8, 9}. These numbers indicate a location within a space. Vector databases first convert data into vectors and create indexing for faster searching. Vectors are often used to represent various types of data, such as numerical values, text, images, or any other data that can be represented as a set of attributes or features.
 
-![vector](/assets/DBS_pictures/vector.png)
+![vector](/pictures/DBS_pictures/vector.png)
 
 #### Advantage 
 Vector databases work at scale, work quickly, and are more cost-effective.
@@ -96,7 +96,7 @@ A column-oriented database is a non-relational database that stores the data in 
 
 Imagine if you have a box of colored pencils. Instead of mixing all the colors together, you decide to keep all the same colored pencils together. So, all the blue pencils are in one container, all the red pencils in another container and so on. This is what a columnar database does. It keeps all similar information together in one 'column', making it easier to find and use.
 
-![dbs](/assets/DBS_pictures/columnar.png)
+![dbs](/pictures/DBS_pictures/columnar.png)
 
 #### Advantages
 Think of columnar databases like a well-organized toy box. When you want to play with a certain type of toy, like all the cars or all dolls, you can easily find them because they're all stored together. This makes it super fast to find and play with your favorite toys.
