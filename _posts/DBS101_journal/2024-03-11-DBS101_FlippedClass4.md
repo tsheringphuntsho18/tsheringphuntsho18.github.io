@@ -39,17 +39,18 @@ ROW_NUMBER()
 
 ![aaf](/pictures/DBS_pictures/rndemo.png)
 
-### Widowing
+### Windowing
 Window function performs a calculation such as aggregation, ranking and moving average across a set of table rows related to the current row. Let’s imagine that we are looking out to a busy street from the window. We see different things, right? SQL window functions also work like that, they go through the data row by row and the cool thing is they remember what they have seen before and what’s coming up next.
 
 There are two parts in a windowed aggregation:
 
 OVER
-The OVER clause  defines a window. This clause specifies how the rows that the function will operate on are determined. It can involve two parts:
-Partition By
+
+The OVER clause  defines a window. This clause specifies how the rows that the function will operate on are determined. It can involve two parts:<br>
+Partition By<br>
 Order By
 
-Rows Between or Range between
+Rows Between or Range between <br>
 The difference between rows between and range between is that rows between specifies the distance in number of rows and range between specifies the distance in the values. 
 
 DEMO

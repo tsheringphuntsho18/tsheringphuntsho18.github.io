@@ -17,7 +17,7 @@ SQL allows queries that check whether the value is null. It is not possible to t
 ![null value](/pictures/DBS_pictures/ss9.png)
 
 ### Set operations in SQL
-Set operators are special type of operators which are used to combine the result of two queries. Operators covered under SET operators are: Operators covered under set operators are union, union all, intersect and minus.
+Set operators are special type of operators which are used to combine the result of two queries. Operators covered under SET operators are: union, union all, intersect and minus.
 ![type](/pictures/DBS_pictures/ss10.png)
 
 #### Union
