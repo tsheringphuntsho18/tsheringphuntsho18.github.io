@@ -13,6 +13,8 @@ In this flipped class, we did 3 activities on the topic indexing, leading to a b
 ### First activity
 My group was assigned a buffer tree(one of the types of indexing). Following information is what we have come up with.
 
+![buffertree](/pictures/DBS_pictures/buffertree.png)
+
 A buffer tree is a specialized data structure designed to efficiently manage large datasets stored on external storage devices like hard drives. Buffer trees are built on top of an (a, b)-tree, a balanced search tree structure. This ensures efficient searching and organization within the data.
 
 Whenever a buffer becomes full, its contents are pushed down to the node’s children using a small number of I/Os. The main idea of buffering technique is to perform operations on an external tree data structure in a lazy manner. When inserting an element we do not search down the tree for the relevant leaf right away but wait until we have collected a batch of insertion and then we insert this block into the buffer of the root.
