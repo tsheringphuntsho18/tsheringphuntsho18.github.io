@@ -41,9 +41,63 @@ Ex: Covid-19 patient in bhutan, india and china.
 ### Third activity
 Our final activity for the flipped class was the quiz competition between two teams (team A and team B). Each team has members from each topic and each team has 12 members. Following are the quiz questions with answers.
 
-Round one (MCQ)
+#### Round one (MCQ)
+1. The buffer tree is an alternative approach to the _______.<br>
+ANS: Log-structured merge tree.
 
-Round two (Rapid answer)
+2. In a buffer tree a buffer is associated with each ___node of a b+ tree.<br>
+ANS: internal
+
+3. When an index record is inserted into the buffer tree, it is first inserted into the buffer of the ____ node.<br>
+ANS: root
+
+4. Bitmap indices are designed for easy querying on ____ keys.<br>
+ANS: multiple
+
+5. Buffer trees have been implemented as a part of the ___________ index structure in postgresQL.<br>
+ANS: Generalized search tree
+
+6. In a bitmap index, each bitmap has as many bits as the ____ of records in the relation.<br>
+ANS: number
+
+7. Bitmap indexes are useful for selections mainly when there are selections on ___keys.<br>
+ANS: multiple
+
+8. The ___ of two bitmaps is computed to answer queries on multiple keys using bitmap indices.<br>
+ANS: intersection
+
+9. On SSD storage, buffer trees can provide better write performance compared to LSM trees.(True/False)<br>
+ANS: True
+
+10. Temporal data refers to data that has an associated time period. (True/False)<br>
+ANS: True
+
+
+Round two (Rapid answer questions)[10 marks]
+1. Important of indexing.
+- Improved Search Performance
+- Enhanced Data Retrieval
+- Optimized Query Processing
+- Support for Complex Queries
+- Reduced Resource Consumption
+- Scalability
+- Optimized Storage
+- Consistency and Reliability
+- Facilitates Sorting and Filtering
+- Supports Data Integrity Constraints
+
+2. Types of indexing.
+- B-Tree Indexing
+- Hash Indexing
+- Inverted Indexing
+- Bitmap Indexing
+- Spatial Indexing
+- Full-text Indexing
+- Clustered Indexing
+- Non-clustered Indexing
+- Primary indexing
+- Secondary indexing
+
 
 ![quiz](/pictures/DBS_pictures/quiz.jpg)
 
