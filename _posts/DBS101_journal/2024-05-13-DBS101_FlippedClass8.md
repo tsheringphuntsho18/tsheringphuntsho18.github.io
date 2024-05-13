@@ -43,6 +43,8 @@ Round one (MCQ)
 
 Round two (Rapid answer)
 
+![quiz](/pictures/DBS_pictures/quiz.jpg)
+
 ## Conclusion
 By doing these 3 activities, I have gained much knowledge on the topic indexing and the types of indexing. The class was so interesting and interactive that all the students has fully engaged in the group discussion.
 Both teams end up in the tie, so winner of the quiz was decided by playing rock paper scissors and team A won it.
