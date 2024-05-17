@@ -6,7 +6,7 @@ tags: [SWS101]
 
 # Topic: Snort
 
-![traffic](/pictures/SWS_pictures/traffic.png)
+![snort](/pictures/SWS_pictures/snort0.png)
 
 ## Introduction
 Snort is the foremost Open Source Intrusion Prevention System (IPS) in the world. Snort IPS uses a series of rules that help define malicious network activity and uses those rules to find packets that match against them and generate alerts for users. 
@@ -337,6 +337,8 @@ Create a rule to filter packets with the same source and destination IP and run 
 
 ANS: 7
 
-
+Case Example - An analyst modified an existing rule successfully. Which rule option must the analyst change after the implementation?
+![snort](/pictures/SWS_pictures/snort34.png)
+ANS: rev
 ## Conclusion
 From this room, I have learned how to use Snort to detect real-time threats, analyze recorded traffic files and identify anomalies. I also knew some of the capabilities of Snort like, live traffic analysis, attack and probe detection, Packet logging, Protocol analysis and real-time alerting. By the way, it was a really though room to complete.
