@@ -174,6 +174,7 @@ Write a simple c program and save it with .c extension
 Step2 <br>
 Open a terminal and type this command : gcc -c -S <filename.c> -o <output filename><br>
 The command compiles the C source file into an assembly language file.
+
 ![asm](/pictures/SWS_pictures/asm6.png)
 
 ## Conclusion
