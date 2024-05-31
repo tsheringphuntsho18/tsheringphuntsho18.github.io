@@ -8,8 +8,7 @@ tags: [DBS101]
 
 ## Introduction
 
-Query Optimization is a crucial aspect of database management systems (DBMS) that seeks to determine the most efficient way to execute a given query by considering a variety of query execution strategies. In this flipped class I learned two query processing that is materialized views and advanced topics in 
-query optimization.
+Query Optimization is a crucial aspect of database management systems (DBMS) that seeks to determine the most efficient way to execute a given query by considering a variety of query execution strategies. In this flipped class I learned two query processing that is materialized views and advanced topics in query optimization.
 
 ## Materialized view
 
