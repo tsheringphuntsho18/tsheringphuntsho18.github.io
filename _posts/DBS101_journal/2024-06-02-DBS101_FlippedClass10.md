@@ -1,6 +1,6 @@
 ---
-Title: DBS101 Flipped Class 11
-categories: [DBS101, Flipped_class11]
+Title: DBS101 Flipped Class 10
+categories: [DBS101, Flipped_class10]
 tags: [DBS101]
 ---
 # Transaction and Serializability
