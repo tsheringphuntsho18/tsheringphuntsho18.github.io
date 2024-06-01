@@ -53,4 +53,4 @@ To test the serializability of a schedule, we can use Serialization Graph or Pre
 
 ## Conclusion
 
-As I conclude my journal, I want to mention that the concept of a transaction has been applied broadly in database systems and applications. I have also done a short practical transaction to get hand on practice. DBMS transactions must follow the ACID properties to be considered serializable. There are different types of serializability in DBMS, each with its own benefits and drawbacks. In most cases, selecting the right type of serializability will come down to a trade-off between performance and correctness.
+As I conclude my journal, I want to mention that the concept of a transaction has been applied broadly in database systems and applications. I have also done a short practical transaction to get hand on practice on transaction works. DBMS transactions must follow the ACID properties to be considered serializable. There are different types of serializability in DBMS, each with its own benefits and drawbacks. In most cases, selecting the right type of serializability will come down to a trade-off between performance and correctness.
