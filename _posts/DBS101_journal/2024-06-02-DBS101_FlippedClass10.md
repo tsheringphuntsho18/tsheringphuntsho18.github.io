@@ -4,7 +4,7 @@ categories: [DBS101, Flipped_class10]
 tags: [DBS101]
 ---
 
-# # Topic: Transaction and Serializability
+# Topic: Transaction and Serializability
 
 ## Transaction
 
