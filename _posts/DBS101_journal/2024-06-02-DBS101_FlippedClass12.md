@@ -22,15 +22,13 @@ Log-based recovery works by using the transaction log to redo or undo transactio
 
  • undo(Ti) -- restores the value of all data items updated by Ti to their old values, going backwards from the last log record for Ti
 
-- Each time a data item X is restored to its old value V a special log
-record <Ti , X, V> is written out
+- Each time a data item X is restored to its old value V a special log record <Ti , X, V> is written out
 
 - When undo of a transaction is complete, a log record
 <Ti abort> is written out.
 
-• redo(Ti) -- sets the value of all data items updated by Ti to the new
-values, going forward from the first log record for Ti
-No logging is done in this case
+• redo(Ti) -- sets the value of all data items updated by Ti to the new values, going forward from the first log record for Ti 
+- No logging is done in this case
 
 <b>Recovering from Failure</b>
 
