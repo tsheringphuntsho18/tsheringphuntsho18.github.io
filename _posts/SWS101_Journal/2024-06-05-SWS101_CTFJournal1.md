@@ -29,11 +29,11 @@ We found that there is a hidden directory /simple let's check it out.
 Here we can see this is a default page for something called “CMS Made Simple” and if we look in the bottom corner we can see it is version 2.2.8. Let’s search in exploit DB for CMS Made Simple 2.2.8 exploit.
 ![CTF](/pictures/SWS_pictures/simplectf/simplecve.png)
 
-We are going to use this cve.
+We are going to use this cve.<br>
 <b>ANS:</b> CVE-2019-9053
 
 ### To what kind of vulnerability is the application vulnerable?
-It is vulnerable to SQL injection
+It is vulnerable to SQL injection<br>
 <b>ANS:</b> SQLi
 
 ### What's the password?
