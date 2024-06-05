@@ -20,25 +20,25 @@ Log-based recovery works by using the transaction log to redo or undo transactio
 
 <b>Undo and Redo of Transactions</b>
 
- • undo(Ti) -- restores the value of all data items updated by Ti to their old values, going backwards from the last log record for Ti
+undo(Ti) -- restores the value of all data items updated by Ti to their old values, going backwards from the last log record for Ti
 
-- Each time a data item X is restored to its old value V a special log record <Ti , X, V> is written out
+Each time a data item X is restored to its old value V a special log record <Ti , X, V> is written out
 
-- When undo of a transaction is complete, a log record
+When undo of a transaction is complete, a log record
 <Ti, abort> is written out.
 
-• redo(Ti) -- sets the value of all data items updated by Ti to the new values, going forward from the first log record for Ti 
-- No logging is done in this case
+redo(Ti) -- sets the value of all data items updated by Ti to the new values, going forward from the first log record for Ti 
+No logging is done in this case
 
 <b>Recovering from Failure</b>
 
-• Transaction Ti needs to be undone if the log
-- Contains the record <Ti, start>,
-- But does not contain either the record <Ti, commit> or <Ti, abort>.
+Transaction Ti needs to be undone if the log
+Contains the record <Ti, start>,
+But does not contain either the record <Ti, commit> or <Ti, abort>.
 
-• Transaction Ti needs to be redone if the log
-- Contains the records <Ti, start>
-- And contains the record <Ti, commit> or <Ti, abort>
+Transaction Ti needs to be redone if the log
+Contains the records <Ti, start>
+And contains the record <Ti, commit> or <Ti, abort>
 
 <b>Advantages of Log based Recovery</b>
 
@@ -55,18 +55,18 @@ Log-based recovery works by using the transaction log to redo or undo transactio
 Shadow paging is a non-log-based recovery mechanism that uses a copy-on-write technique for providing atomicity and durability (two of the ACID properties) in database systems. It is an alternative to log based recovery techniques.
 
 The advantages of shadow paging are as follows;
-- No need for log records.
-- No undo/ Redo algorithm.
-- Recovery is faster.
+No need for log records.
+No undo/ Redo algorithm.
+Recovery is faster.
 
 ## Aries
 ARIES stands for Algorithm for Recovery and Isolation Exploiting Semantics. It is based on the Write Ahead Log (WAL) protocol, so  any change is recorded in log on stable storage before the database change is written to disk and it must use STEAL + NO-FORCE buffer pool policies. 
 
 Unlike the recovery algorithm described earlier, ARIES uses log sequence number (LSN) to identify log records. There is another key concept in aries; 
 
-- <b>Dirty Page Table (DPT):</b> This table keeps track of pages that have been modified but not yet written to disk. It is crucial during recovery to know which pages were in an unstable state at the time of the crash.
+ <b>Dirty Page Table (DPT):</b> This table keeps track of pages that have been modified but not yet written to disk. It is crucial during recovery to know which pages were in an unstable state at the time of the crash.
 
-- <b>Transaction Table:</b> This table maintains information about all active transactions at the time of a crash. It helps in determining which transactions need to be rolled back during the recovery process.
+ <b>Transaction Table:</b> This table maintains information about all active transactions at the time of a crash. It helps in determining which transactions need to be rolled back during the recovery process.
 
 The recovery process actually consists of 3 phases:
 1. Analysis:

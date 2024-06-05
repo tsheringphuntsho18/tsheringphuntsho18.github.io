@@ -40,8 +40,9 @@ It is vulnerable to SQL injection<br>
 To get the password, I started the exploit using the python script given in the CVE. First I copy pasted that python script and save as exploit.py.
 ![CTF](/pictures/SWS_pictures/simplectf/simpleexploit.png)
 
-Next I ran this python file in the terminal. Command to run the python file is 
+Next I ran this python file in the terminal. Command to run the python file is<br> 
 python3 exploit.py -u http://10.10.137.253/simple/ 
+
 ![CTF](/pictures/SWS_pictures/simplectf/simplecrack.png)
 
 I cracked that password and got as the password secret
