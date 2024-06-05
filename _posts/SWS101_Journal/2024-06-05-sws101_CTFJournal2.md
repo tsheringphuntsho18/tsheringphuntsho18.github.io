@@ -34,9 +34,11 @@ I downloaded those 2 files using the get command.
 Following 2 image is the content inside the .txt file
 
 Locks.txt
+
 ![CTF](/pictures/SWS_pictures/Bountyhacker/bhlocks.png)
 
 Task.txt
+
 ![CTF](/pictures/SWS_pictures/Bountyhacker/bhtask.png)
 
 Now we know that the task list was written by lin.<br>
