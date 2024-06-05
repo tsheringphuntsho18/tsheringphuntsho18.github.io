@@ -4,7 +4,7 @@ categories: [SWS101, CTF_Journal1]
 tags: [SWS101]
 ---
 
-# Topic: Simple CTF
+# Try Hack Me Room: Simple CTF
 ![CTF](/pictures/SWS_pictures/simplectf/simplctf.png)
 
 When I paste the ip address on the browser, it showed like this;
