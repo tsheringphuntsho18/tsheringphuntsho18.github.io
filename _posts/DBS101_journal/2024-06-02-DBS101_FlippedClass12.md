@@ -25,7 +25,7 @@ Log-based recovery works by using the transaction log to redo or undo transactio
 - Each time a data item X is restored to its old value V a special log record <Ti , X, V> is written out
 
 - When undo of a transaction is complete, a log record
-<Ti abort> is written out.
+<Ti, abort> is written out.
 
 • redo(Ti) -- sets the value of all data items updated by Ti to the new values, going forward from the first log record for Ti 
 - No logging is done in this case
@@ -33,12 +33,12 @@ Log-based recovery works by using the transaction log to redo or undo transactio
 <b>Recovering from Failure</b>
 
 • Transaction Ti needs to be undone if the log
-- Contains the record <Ti start>,
-- But does not contain either the record <Ti commit> or <Ti abort>.
+- Contains the record <Ti, start>,
+- But does not contain either the record <Ti, commit> or <Ti, abort>.
 
 • Transaction Ti needs to be redone if the log
-- Contains the records <Ti start>
-- And contains the record <Ti commit> or <Ti abort>
+- Contains the records <Ti, start>
+- And contains the record <Ti, commit> or <Ti, abort>
 
 <b>Advantages of Log based Recovery</b>
 
