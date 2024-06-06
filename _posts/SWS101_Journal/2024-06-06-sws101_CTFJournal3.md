@@ -1,6 +1,6 @@
 ---
-Title: SWS101 CTF Journal 2
-categories: [SWS101, CTF_Journal2]
+Title: SWS101 CTF Journal 3
+categories: [SWS101, CTF_Journal3]
 tags: [SWS101]
 ---
 
