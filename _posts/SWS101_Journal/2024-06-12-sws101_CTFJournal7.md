@@ -15,7 +15,7 @@ We discovered 2 open ports 22 and 80
 
 Since port 80 is up, let’s check the website.
 
-![CTF](/pictures/SWS_pictures/wgel/web.png)
+![CTF](/pictures/SWS_pictures/wgel/website.png)
 
 It’s just a normal Apache2 page.
 
