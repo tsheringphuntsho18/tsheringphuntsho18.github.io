@@ -49,5 +49,5 @@ Got id_rsa file. Let's try to crack it. Lets try to login with ssh. To get the S
 <b>ANS:</b> 057c67131c3d5e42dd5cd3075b198ff6
 
 ### Root flag
-Now it’s time to get root access. The procedure will be walkthrough in part.<br>
+Now it’s time to get root access. The procedure will be walkthrough in part2.<br>
 <b>ANS:</b>  b1b968b37519ad1daa6408188649263d
