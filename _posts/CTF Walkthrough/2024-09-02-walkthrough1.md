@@ -1,7 +1,7 @@
 ---
-Title: SWS101 Walkthrough 1
-categories: [SWS101, CTF_walkthrough]
-tags: [SWS101]
+Title: CTF Walkthrough 1
+categories: [CTF, CTF_walkthrough]
+tags: [CTF]
 ---
 
 # Topic : Finals Journal
