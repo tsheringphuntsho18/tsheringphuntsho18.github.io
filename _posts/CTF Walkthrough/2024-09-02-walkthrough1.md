@@ -1,8 +1,9 @@
 ---
-Title: CTF Walkthrough_1
+Title: CTF Walkthrough 1
 categories: [CTF, CTF_walkthrough]
 tags: [CTF]
 ---
+![osi](/pictures/SWS_pictures/osiModel.png)
 
 ### Room Information
 
