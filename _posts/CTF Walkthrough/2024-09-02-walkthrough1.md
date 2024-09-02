@@ -12,4 +12,4 @@ tags: [CTF]
 
 • Room type:  Challenges(CTF)
 
-• Category (e.g., Web Exploitation, Cryptography, Forensics): web exploitation
+• Category ( Web Exploitation, Cryptography, Forensics): web exploitation
