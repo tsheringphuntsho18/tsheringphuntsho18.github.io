@@ -71,6 +71,7 @@ Let’s Transfer these files from the Victim’s machine to the attacker’s sys
 ![cover](/pictures/SWS_pictures/write_up/U.AhighSchool/sender.png)
 We send files like this. And in another terminal, we receive like this;
 ![cover](/pictures/SWS_pictures/write_up/U.AhighSchool/receiver.png)
+
 Let’s check if I received it or not
 ![cover](/pictures/SWS_pictures/write_up/U.AhighSchool/isthere.png)
 
