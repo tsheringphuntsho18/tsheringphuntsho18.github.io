@@ -3,6 +3,9 @@ Title: CTF Walkthrough 1
 categories: [CTF, CTF_walkthrough]
 tags: [CTF]
 ---
+
+"<span style="color:yellow">*Remember, hacking is more than just a crime. It's a survival trait.*</span>"
+
 ![cover](/pictures/SWS_pictures/write_up/U.AhighSchool/cover.png)
 
 ### Room Information

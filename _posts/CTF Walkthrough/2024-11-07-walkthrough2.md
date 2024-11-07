@@ -3,7 +3,7 @@ Title: CTF Walkthrough 2
 categories: [CTF, CTF_walkthrough]
 tags: [CTF]
 ---
-"<span style="color:yellow">*Always update your dependencies and your packages*</span>."
+"<span style="color:yellow">*Always update your dependencies and your packages.*</span>"
 
 
 ![cover](/pictures/SWS_pictures/write_up/whiterose/cover.png)
