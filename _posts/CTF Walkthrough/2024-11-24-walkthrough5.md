@@ -7,7 +7,7 @@ tags: [CTF]
 
 ![cover](/pictures/SWS_pictures/write_up/lookup/cover.png)
 
-### oom Information
+### Room Information
 - Room Name: Lookup
 - Difficulty Level: Easy
 - Room type: Challenges(CTF)
