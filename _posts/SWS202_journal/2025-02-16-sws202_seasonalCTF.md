@@ -1,5 +1,5 @@
 ---
-Title: Seasonal CTF 1
+Title: Seasonal CTF Joutnal 1
 categories: [CTF, CTF_walkthrough]
 tags: [CTF]
 ---
