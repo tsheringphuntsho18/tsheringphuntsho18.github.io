@@ -1,7 +1,7 @@
 ---
 Title: Seasonal CTF Joutnal 1
 categories: [CTF, CTF_walkthrough]
-tags: [CTF]
+tags: [SWS202]
 ---
 "<span style="color:yellow">*Be black or white, don’t try to be grey.*</span>"
 
